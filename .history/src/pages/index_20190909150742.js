@@ -7,9 +7,9 @@ import Featured from "../components/content/featured";
 
 const IndexPage = ({ data }) => (
   <Layout data={data}>
-    <Helmet title="This is here Helmet elment is your <title> attribute!" />
     {console.log(data)}
-    {console.log("data")}
+    {console.log(dat"a)}
+    <Helmet title="This is here Helmet elment is your <title> attribute!" />
     {data.featuredArticle.edges.map(({ node }) => (
       <Featured
         key={node.nid}

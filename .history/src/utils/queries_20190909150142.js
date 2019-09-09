@@ -46,3 +46,4 @@ export const ArticleNode = graphql`
     }
   }
 `;
+console.log(node__article);

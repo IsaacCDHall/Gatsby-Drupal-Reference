@@ -78,7 +78,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Header data={data} {...props} />}
+    render={data => <Header data={data} {...props}  {console.log(data)} />}
   />
 );
-// try to add a console.log on data here

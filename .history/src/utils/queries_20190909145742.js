@@ -1,9 +1,5 @@
 import { graphql } from "gatsby";
-import header from "../components/layouts/global/header";
-import { node } from "prop-types";
-import { type } from "os";
 
-// Query fragment held header, not sure why its on "node__article" TypeName
 export const ArticleNode = graphql`
   fragment ArticleNode on node__article {
     title

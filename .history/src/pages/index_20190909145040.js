@@ -1,15 +1,15 @@
 import React from "react";
-import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import {graphql } from "gatsby";
+import {Helmet} from "react-helmet";
 import Layout from "../components/layouts/default";
 import Teaser from "../components/content/teaser";
 import Featured from "../components/content/featured";
 
 const IndexPage = ({ data }) => (
   <Layout data={data}>
-    <Helmet title="This is here Helmet elment is your <title> attribute!" />
-    {console.log(data)}
-    {console.log("data")}
+    <Helmet
+      title="This is here Helmet elment is your <title> attribute!"
+    />
     {data.featuredArticle.edges.map(({ node }) => (
       <Featured
         key={node.nid}

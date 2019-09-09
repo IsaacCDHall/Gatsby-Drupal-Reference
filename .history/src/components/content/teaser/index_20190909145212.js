@@ -25,7 +25,7 @@ const Teaser = props => {
       </h3>
       <NodeInfo node={props.node} />
       <div>
-        {/* This is used to remove html code from query response and limit to 200 chars*/}
+        {/* This is used to remove html code from query response and cut to 200 chars*/}
         {props.content.replace(/(<([^>]+)>)/gi, "").substring(0, 200) + "..."}
       </div>
     </TeaserContainer>

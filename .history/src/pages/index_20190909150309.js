@@ -6,10 +6,9 @@ import Teaser from "../components/content/teaser";
 import Featured from "../components/content/featured";
 
 const IndexPage = ({ data }) => (
+  console.log('node__article')
   <Layout data={data}>
     <Helmet title="This is here Helmet elment is your <title> attribute!" />
-    {console.log(data)}
-    {console.log("data")}
     {data.featuredArticle.edges.map(({ node }) => (
       <Featured
         key={node.nid}

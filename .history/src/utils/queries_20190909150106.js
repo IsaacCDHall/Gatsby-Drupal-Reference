@@ -5,7 +5,7 @@ import { type } from "os";
 
 // Query fragment held header, not sure why its on "node__article" TypeName
 export const ArticleNode = graphql`
-  fragment ArticleNode on node__article {
+  fragment ArticleNode on Node {
     title
     body {
       processed
